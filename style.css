@@ -86,8 +86,139 @@ h4,
 h5,
 h6 {
     font-size: inherit;
-    font-weight: 400;
 }
 
 
 /*--------------------*/
+
+
+/* Определить размеры контейнера */
+
+.wrapper {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+
+/* Общие настройки для каждого из блоков */
+
+.main__element {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+}
+
+
+/* Общие настройки для каждого заголовка */
+
+.element__title {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+
+/*--------Header------------*/
+
+.header__container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+}
+
+.header__element {}
+
+
+/* [Задача] Реализовать якоря для перехода к конкретному пункту, выделяем жирным пункт, к которому переходим и запиниваем менюшку */
+
+.header__element:nth-child(1) {
+    font-weight: 600;
+}
+
+
+/*--------Home------------*/
+
+.home__block {
+    margin-top: 40px;
+    margin-bottom: 104px;
+}
+
+
+/* [Задача] Выровнять по центру "ux | ui designer" */
+
+
+/* Текст */
+
+.home__text {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 30px;
+}
+
+.title__h1 {
+    font-size: 47px;
+    line-height: 59px;
+}
+
+.element__text {}
+
+.small__text {
+    font-size: 16px;
+    transform: rotate(-90deg);
+}
+
+
+/* [Задача] Реализовать Language selector */
+
+.span__bold {
+    font-weight: 600;
+}
+
+
+/* Img */
+
+.element__img {}
+
+.home__img {}
+
+
+/*--------About me------------*/
+
+.aboutme__block {
+    background-color: #F6F6F6;
+    text-align: center;
+}
+
+.element__title {}
+
+
+/* [Задача] Уйти от px для более удобного адаптива */
+
+.aboutme__p {
+    margin-top: 18px;
+}
+
+
+/*--------Skills------------*/
+
+.skills__block {}
+
+.element__title {}
+
+.element__text {}
+
+.element__img {}
+
+.skills__logo {}
+
+
+/* [Задача] Сделать единые margin между каркасными блоками */
